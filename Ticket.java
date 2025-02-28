@@ -23,11 +23,11 @@ public class Ticket {
     }
 
     public LocalTime getFechaHora() {
-        return fechaHora;
+        return fechaHoraL;
     }
 
     public void setFechaHora(LocalTime fechaHora) {
-        this.fechaHora = fechaHora;
+        this.fechaHoraL = fechaHora;
     }
 
     public int getPiso() {
@@ -71,8 +71,10 @@ public class Ticket {
         nuevoTicket.add(plaza);
         return nuevoTicket;
     }
+    
 
     public static int parseador(LocalTime hora) {
         return hora.getHour() * 10000 + hora.getMinute() * 100 + hora.getSecond();
     }
+    
 }
